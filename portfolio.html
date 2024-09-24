@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wali Saiyed - Developer Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0a0e17;
+      color: #d6d9e0;
+    }
+
+    /* Neon Effect for Name Only */
+    .neon {
+      text-shadow: 0 0 5px #b4f208, 0 0 10px #f28305, 0 0 15px #c50606, 0 0 20px #0b3ffc, 0 0 25px #cf1212;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #0a3d62;
+      color: #fff;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #fff;
+    }
+
+    /* Horizontal rule between name and navbar */
+    hr {
+      margin-top: 10px;
+      border: none;
+      height: 1px;
+      background-color: #76c7c0;
+      width: 90%;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #76c7c0;
+    }
+
+    /* Main Structure */
+    main {
+      padding: 100px 20px 0;
+    }
+
+    section {
+      margin: 40px 0;
+      padding: 20px;
+      background-color: #1a202c;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      color: #76c7c0;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    /* About Section */
+    #about {
+      display: flex;
+      align-items: center;
+    }
+
+    #about img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-right: 30px;
+    }
+
+    #about p {
+      max-width: 800px;
+    }
+
+    /* Projects Section */
+    #projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background-color: #2d3748;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .project h3 {
+      color: #76c7c0;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    /* Contact Form */
+    #contact {
+      text-align: center;
+    }
+
+    form {
+      background-color: #2d3748;
+      border-radius: 8px;
+      padding: 30px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #1a202c;
+      color: white;
+    }
+
+    form button {
+      background-color: #007bff;
+      padding: 10px 20px;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #0a3d62;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="neon">Wali Saiyed's Portfolio</h1>
+    <hr />
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <img src="https://via.placeholder.com/150" alt="Wali Saiyed Profile Photo" />
+      <div>
+        <h2>Introduction</h2>
+        <p>
+          Hello! I'm Wali Saiyed, a Python developer passionate about developing web applications and automating workflows. With experience in cloudcomputing,react js ,python and sql .I love solving real-world problems with technology.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Project 1: Hi-tech Controls</h3>
+        <p>
+          A web application built using Python and CSS for designing the layout and adding functionality to create a seamless user experience.
+        </p>
+        <a href="https://github.com/Akbarhusain12/Clinic_Management" target="_blank" class="btn">View Project</a>
+      </div>
+
+      <div class="project">
+        <h3>Project 2:</h3>
+        <p>
+          An interactive dashboard built with Python and Plotly to visualize data trends, enabling data-driven decision-making.
+        </p>
+        <a href="https://github.com/Akbarhusain12/Diwali_Sales_Analysis" target="_blank" class="btn">View Project</a>
+      </div>
+
+      <div class="project">
+        <h3>Project 3: Contact Manager App</h3>
+        <p>
+          A contact manager app developed with Node.js, Express.js, and MongoDB, offering a RESTful API for managing contacts efficiently.
+        </p>
+        <a href="https://github.com/Akbarhusain12/Contact-Backend" target="_blank" class="btn">View Project</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Wali Saiyed. All rights reserved.</p>
+  </footer>
+</body>
+</html>
